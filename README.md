@@ -607,32 +607,3 @@ MySQL
 ```
 
 Dengan struktur ini, frontend, backend, dan database memiliki tanggung jawab masing-masing sehingga kode lebih terorganisir dan lebih mudah dikembangkan.
-
-````
-
-### Supaya README-nya makin enak dilihat di GitHub
-
-Aku sarankan **jangan memasukkan semua kode lengkap** ke README. README cukup menjelaskan **konsep dan fungsi**, sedangkan kode tetap berada di folder project.
-
-Struktur repo-nya nanti kira-kira:
-
-```text
-project/
-│
-├── flutter_app/
-│   ├── lib/
-│   │   ├── models/
-│   │   ├── pages/
-│   │   └── services/
-│   └── pubspec.yaml
-│
-├── laravel_api/
-│   ├── app/
-│   ├── routes/
-│   ├── database/
-│   └── .env.example
-│
-└── README.md
-````
-
-**Catatan penting:** kalau project ini mau di-upload ke GitHub, **jangan upload `.env` Laravel asli**, karena biasanya berisi konfigurasi database dan informasi sensitif. Buat `.env.example` sebagai contoh konfigurasi saja.
